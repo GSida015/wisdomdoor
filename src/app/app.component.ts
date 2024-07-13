@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ValueSystemService } from './services/value-system.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Hackaton-rework-onlyme';
+  title = 'WisdomDoor';
+  top = "-350";
+  constructor(protected valServ: ValueSystemService){}
+
+  changeHamburgerPosition(){
+    this.top = "0"
+  }
+  changeHamburgerPositionBack(){
+    this.top = "-350"
+  }
 }

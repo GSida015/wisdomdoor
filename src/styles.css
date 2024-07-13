@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 1230px) {
+    .container {
+        width: 1030px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .container {
+        width: 830px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        width: 630px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .container {
+        width: 430px;
+    }
+}

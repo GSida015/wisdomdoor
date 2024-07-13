@@ -1,0 +1,60 @@
+.wrapper {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background-color: #9b9bf3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.student , .teacher{
+    position: relative;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-door {
+    height: 278px;
+}
+
+.student-door , .teacher-door {
+    position: relative;
+    width: 250px;
+    z-index: 2;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.student:hover .student-door, .teacher:hover .teacher-door {
+    transform: translateX(-120px) rotateY(85deg);
+}
+
+.back-card {
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 153, 0);
+    color: white;
+    position: absolute;
+    border-radius: 200px 200px 0px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ticher-one {
+    height: 240px;
+    background-color: #222266;
+}
+
+@media screen and (max-width: 830px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}

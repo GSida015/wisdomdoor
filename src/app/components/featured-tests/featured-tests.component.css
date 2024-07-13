@@ -1,0 +1,120 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+
+.cont-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.subtitle {
+    font-weight: 500;
+    color: gainsboro;
+}
+
+
+.cont-featured {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 40px 30px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: .2s linear;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s linear;
+}
+
+.title-card {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card:hover {
+    transform: scale(1.15);
+}
+
+.card:hover > .logo-name > .logo{
+    background-color: black;
+    color: white;
+}
+
+.card:hover > .logo-name > .logo > .icons {
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+.card:hover + * {
+    filter: opacity(0.75);
+    transform: scale(1.03);
+}
+
+.card:hover + * + * {
+    filter: opacity(0.5);
+}
+
+.difficulity {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.description {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+    .cont-featured {
+        justify-content: center;
+    }
+}

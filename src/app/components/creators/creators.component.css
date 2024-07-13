@@ -1,0 +1,101 @@
+.wrapper {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #9b9bf3;
+    font-family: "Montserrat", sans-serif;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-style: 32px;
+    font-weight: 700;
+}
+
+.cards-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    transition: .2s linear;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px black;
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.position {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.icon {
+    color: #1b1b1b;
+    transition: .2s linear;
+}
+
+.designer {
+    width: 100px;
+    height: 100px;
+}
+
+.card:hover > .icon {
+    color: white;
+}
+
+@media  screen and (max-width: 830px) {
+    .subtitle {
+        width: 400px;
+        text-align: center;
+    }
+}

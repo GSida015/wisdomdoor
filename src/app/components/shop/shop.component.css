@@ -1,0 +1,194 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+}
+
+.wrapper-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.coins , .hearts , .premium{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.description-of-card , .purchase {
+    position: relative;
+    z-index: 1;
+}
+
+.description-of-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.quantity {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.logo {
+    position: absolute;
+    bottom: -100px;
+    left: 30px;
+    color: #1b1b1b;
+    transform: rotate(30deg);
+    transition: .2s linear;
+}
+
+
+
+.purchase {
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .2s linear;
+}
+
+.purchase:hover {
+    transform: scale(1.05);
+    color: gold;
+    text-shadow: 0px 0px 10px rgba(255, 217, 0, 0.39);
+}
+
+.purchase:hover ~ .coin {
+    color: pink;
+}
+.purchase:hover ~ .heart {
+    color: #e22655;
+}
+.purchase:hover ~ .premium-logo {
+    color: gold;
+}
+
+
+.offer {
+    width: 400px;
+    height: 300px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-desc-title {
+    text-transform: capitalize;
+}
+
+.premium-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.premium-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.premium-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.premium-list-item::before {
+    content: "";
+    margin-right: 5px;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.premium-logo {
+    position: absolute;
+    bottom: -70px;
+    right: -70px;
+    color: #1b1b1b;
+    transition: .2s linear;
+}
+
+.premium-purchase {
+    margin-top: 50px;
+}
+
+.monthly {
+    margin-top: 25px;
+}
+
+.yearly {
+    margin-top: 0px;
+}
+
+.coming-soon {
+    width: 400px;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1230px) {
+    .coins , .hearts , .premium{
+        justify-content: center;
+    }
+    .vouchers {
+        display: flex;
+        justify-content: center;
+    }
+}
